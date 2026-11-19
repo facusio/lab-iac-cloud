@@ -8,6 +8,7 @@ locals {
     "managed-by" = "iac"
     course       = "ucu-cloud"
     lab          = "v2"
+    costcenter   = "lab-ucu"
   }
 
   user_data = templatefile("${path.module}/../shared/web.sh.tftpl", {
